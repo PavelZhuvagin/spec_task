@@ -1,0 +1,87 @@
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+*           text=auto   eol=auto    whitespace=ignore-all           !casesensitive
+*.sh        text        eol=lf
+*.bat       text        eol=crlf
+*.ps1       text        eol=crlf    working-tree-encoding=UTF-16
+*.sln       text        eol=crlf
+*.csproj    text        eol=crlf
+##############################################################################
+# Set default behavior for image files
+#
+# Image files are treated as binary by default.
+###############################################################################
+*.jpg   binary  encoding=binary
+*.png   binary  encoding=binary
+*.gif   binary  encoding=binary
+##############################################################################
+# Set default behavior for doc files
+#
+# Doc files are treated as binary by default.
+###############################################################################
+*.pdf   binary  encoding=binary
+*.docx   binary  encoding=binary
+*.xlsx   binary  encoding=binary
+##############################################################################
+# Set default behavior for executable files
+#
+# Executable files are treated as binary by default.
+###############################################################################
+*.so filter=lfs diff=lfs merge=lfs -binary
+*.dll filter=lfs diff=lfs merge=lfs -binary
+*.dylib filter=lfs diff=lfs merge=lfs -binary
+*.pth filter=lfs diff=lfs merge=lfs -binary
+###############################################################################
+# Set default behavior for command prompt diff.
+#
+# This is need for earlier builds of msysgit that does not have it on by
+# default for csharp files.
+# Note: This is only used by command line
+###############################################################################
+*.cs       text diff=csharp encoding=utf-8
+*.cshtml   text diff=html   encoding=utf-8
+*.csx      text diff=csharp encoding=utf-8
+###############################################################################
+# Set the merge driver for project and solution files
+#
+# Merging from the command prompt will add diff markers to the files if there
+# are conflicts (Merging from VS is not affected by the settings below, in VS
+# the diff markers are never inserted). Diff markers may cause the following 
+# file extensions to fail to load in VS. An alternative would be to treat
+# these files as binary and thus will always conflict and require user
+# intervention with every merge. To do so, just uncomment the entries below
+###############################################################################
+#*.sln       merge=binary
+#*.csproj    merge=binary
+#*.vbproj    merge=binary
+#*.vcxproj   merge=binary
+#*.vcproj    merge=binary
+#*.dbproj    merge=binary
+#*.fsproj    merge=binary
+#*.lsproj    merge=binary
+#*.wixproj   merge=binary
+#*.modelproj merge=binary
+#*.sqlproj   merge=binary
+#*.wwaproj   merge=binary
+# Use ‘union‘ style merge for minified JS
+*.min.js merge=union 
+# Append new changes for log files instead of merge 
+*.log merge=append
+###############################################################################
+# diff behavior for common document formats
+# 
+# Convert binary document formats to text before diffing them. This feature
+# is only available from the command line. Turn it on by uncommenting the 
+# entries below.
+###############################################################################
+#*.doc   diff=astextplain
+#*.DOC   diff=astextplain
+#*.docx  diff=astextplain
+#*.DOCX  diff=astextplain
+#*.dot   diff=astextplain
+#*.DOT   diff=astextplain
+#*.pdf   diff=astextplain
+#*.PDF   diff=astextplain
+#*.rtf   diff=astextplain
+#*.RTF   diff=astextplain

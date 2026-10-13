@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="LeadAccepted" xml:space="preserve"><value>Заявка принята.</value></data>
+  <data name="DeliveryUnavailable" xml:space="preserve"><value>Заявка сохранена, но почтовые каналы временно недоступны.</value></data>
+  <data name="DeliveryUnavailableTitle" xml:space="preserve"><value>Заявка сохранена, но доставка уведомления временно недоступна.</value></data>
+  <data name="InvalidRequest" xml:space="preserve"><value>Некорректные данные запроса.</value></data>
+  <data name="InternalServerError" xml:space="preserve"><value>Внутренняя ошибка сервера.</value></data>
+  <data name="PrimaryFailureSimulation" xml:space="preserve"><value>Имитируется недоступность основного почтового сервиса.</value></data>
+  <data name="SmtpTimeout" xml:space="preserve"><value>Истекло время ожидания SMTP.</value></data>
+  <data name="SmtpUnavailable" xml:space="preserve"><value>SMTP-сервис недоступен.</value></data>
+  <data name="PrimaryFallbackLog" xml:space="preserve"><value>Основной почтовый канал недоступен. Заявка {LeadId} отправляется через резервный канал.</value></data>
+  <data name="RequestCancelledLog" xml:space="preserve"><value>Клиент отменил запрос {TraceId}.</value></data>
+  <data name="RequestErrorLog" xml:space="preserve"><value>Ошибка обработки запроса {TraceId}; StatusCode={StatusCode}.</value></data>
+  <data name="RequestLog" xml:space="preserve"><value>HTTP-запрос {Method} {Path}; ContentLength={ContentLength}</value></data>
+  <data name="ResponseLog" xml:space="preserve"><value>HTTP-ответ {StatusCode}; ContentType={ContentType}; ContentLength={ContentLength}; ElapsedMs={ElapsedMs}; Aborted={Aborted}</value></data>
+  <data name="TraceScope" xml:space="preserve"><value>TraceId:{TraceId}</value></data>
+  <data name="InvalidMailMode" xml:space="preserve"><value>Mail:Mode должен быть Demo или Live.</value></data>
+  <data name="InvalidRecipient" xml:space="preserve"><value>Mail: адрес получателя некорректен.</value></data>
+  <data name="IncompleteAccount" xml:space="preserve"><value>Mail:{0}: заполните серверы, UserName, Password и FromAddress.</value></data>
+  <data name="InvalidAccountConnection" xml:space="preserve"><value>Mail:{0}: SMTP 465/587, IMAP 993, TimeoutSeconds от 1 до 120.</value></data>
+  <data name="LeadSubject" xml:space="preserve"><value>Заявка на обратный звонок: {0}</value></data>
+  <data name="LeadBody" xml:space="preserve"><value>Имя: {0}
+Телефон: {1}
+Email: {2}
+Тип клиента: {3}
+Номер заявки: {4}</value></data>
+  <data name="IndividualClient" xml:space="preserve"><value>Физическое лицо</value></data>
+  <data name="LegalEntityClient" xml:space="preserve"><value>Юридическое лицо</value></data>
+  <data name="RequiredField" xml:space="preserve"><value>Поле «{0}» обязательно.</value></data>
+  <data name="StringLength" xml:space="preserve"><value>Поле «{0}» должно содержать не более {1} символов.</value></data>
+  <data name="InvalidPhone" xml:space="preserve"><value>Поле «{0}» должно содержать корректный телефон.</value></data>
+  <data name="InvalidEmail" xml:space="preserve"><value>Поле «{0}» должно содержать корректный email.</value></data>
+  <data name="InvalidClientType" xml:space="preserve"><value>Поле «{0}» должно содержать поддерживаемый тип клиента.</value></data>
+  <data name="NameField" xml:space="preserve"><value>Имя</value></data>
+  <data name="PhoneField" xml:space="preserve"><value>Телефон</value></data>
+  <data name="EmailField" xml:space="preserve"><value>Email</value></data>
+  <data name="ClientTypeField" xml:space="preserve"><value>Тип клиента</value></data>
+  <data name="ModelValidationTitle" xml:space="preserve"><value>Один или несколько параметров запроса некорректны.</value></data>
+  <data name="ModelBindingError" xml:space="preserve"><value>Значение поля некорректно или обязательное тело запроса отсутствует.</value></data>
+  <data name="CoursesRequired" xml:space="preserve"><value>Список курсов обязателен.</value></data>
+  <data name="UserRequired" xml:space="preserve"><value>Профиль пользователя обязателен.</value></data>
+  <data name="CourseRequired" xml:space="preserve"><value>Список курсов не должен содержать пустых элементов.</value></data>
+  <data name="NegativePrice" xml:space="preserve"><value>Цена курса не может быть отрицательной.</value></data>
+  <data name="UnsupportedChannel" xml:space="preserve"><value>Почтовый канал не поддерживается.</value></data>
+  <data name="UnsupportedClient" xml:space="preserve"><value>Тип клиента не поддерживается.</value></data>
+  <data name="ProbeUsage" xml:space="preserve"><value>Использование: dotnet run --project TrainingCenter.MailProbe -- Primary|Fallback</value></data>
+  <data name="ProbeLiveRequired" xml:space="preserve"><value>Для проверки реальной почты задайте Mail:Mode=Live и настройки обоих аккаунтов.</value></data>
+  <data name="ProbeSubject" xml:space="preserve"><value>Проверка SMTP/IMAP учебного центра</value></data>
+  <data name="ProbeBody" xml:space="preserve"><value>Проверка SMTP и получения письма через IMAP.</value></data>
+  <data name="ProbeSmtpAccepted" xml:space="preserve"><value>SMTP принял письмо. Канал: {0}; Message-Id: {1}</value></data>
+  <data name="ProbeSuccess" xml:space="preserve"><value>Письмо найдено в INBOX через IMAP. Проверка успешна.</value></data>
+  <data name="ProbeNotFound" xml:space="preserve"><value>SMTP принял письмо, но в INBOX оно пока не найдено. Проверьте спам и повторите проверку.</value></data>
+  <data name="ProbeFailure" xml:space="preserve"><value>Проверка не пройдена: {0}. Проверьте настройки аккаунта и доступность серверов.</value></data>
+  <data name="SwaggerTitle" xml:space="preserve"><value>Учебный центр</value></data>
+  <data name="LanguageHeaderDescription" xml:space="preserve"><value>Язык ответов API и почтовых уведомлений.</value></data>
+  <data name="NotFound" xml:space="preserve"><value>Запрошенный ресурс не найден.</value></data>
+  <data name="MethodNotAllowed" xml:space="preserve"><value>HTTP-метод не поддерживается для этого ресурса.</value></data>
+  <data name="UnsupportedMediaType" xml:space="preserve"><value>Тип содержимого запроса не поддерживается.</value></data>
+  <data name="HttpError" xml:space="preserve"><value>Ошибка HTTP {0}.</value></data>
+</root>

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>TrainingCenter-WebApi-local</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../TrainingCenter.BusinessLogic/TrainingCenter.BusinessLogic.csproj" />
+    <ProjectReference Include="../TrainingCenter.DataAccess/TrainingCenter.DataAccess.csproj" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+</Project>

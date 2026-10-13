@@ -1,0 +1,34 @@
+@baseUrl = http://localhost:5080
+
+### Физическое лицо: в деморежиме основной канал падает, резерв принимает заявку
+POST {{baseUrl}}/api/leads
+Content-Type: application/json
+
+{
+  "name": "Иван Иванов",
+  "phone": "+79991234567",
+  "email": "ivan@example.com",
+  "clientType": "Individual"
+}
+
+### Юридическое лицо
+POST {{baseUrl}}/api/leads
+Content-Type: application/json
+
+{
+  "name": "ООО Учеба",
+  "phone": "+74951234567",
+  "email": "office@example.com",
+  "clientType": "LegalEntity"
+}
+
+### Невалидная заявка: 400
+POST {{baseUrl}}/api/leads
+Content-Type: application/json
+
+{
+  "name": "Иван",
+  "phone": "",
+  "email": "invalid",
+  "clientType": "Individual"
+}
